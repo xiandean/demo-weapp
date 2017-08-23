@@ -22,7 +22,7 @@
         <text>Horizontal Scroll\n横向滚动</text>
       </view>
       <view class="page-section-spacing">
-        <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+        <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll">
           <view id="demo1" class="scroll-view-item_H demo-text-1"></view>
           <view id="demo2"  class="scroll-view-item_H demo-text-2"></view>
           <view id="demo3" class="scroll-view-item_H demo-text-3"></view>
