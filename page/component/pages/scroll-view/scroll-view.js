@@ -1,7 +1,7 @@
 var order = ['demo1', 'demo2', 'demo3']
 Page({
   data: {
-    toView: 'green'
+    toView: 'demo2'
   },
   upper: function(e) {
     console.log(e)
@@ -13,7 +13,7 @@ Page({
     console.log(e)
   },
   scrollToTop: function(e) {
-    this.setAction({
+    this.setData({
       scrollTop: 0
     })
   },
