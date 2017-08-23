@@ -17,13 +17,18 @@ Page({
       scrollTop: 0
     })
   },
-  tap: function(e) {
+  tap: function (e) {
     for (var i = 0; i < order.length; ++i) {
       if (order[i] === this.data.toView) {
-        this.setData({
-          toView: order[i + 1],
-          scrollTop: (i + 1) * 200
-        })
+        if(i == order.length - 1) {
+          this.setData({
+            toView: order[0]
+          })
+        }else {
+          this.setData({
+            toView: order[i + 1]
+          })
+        }
         break
       }
     }
